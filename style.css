@@ -1,0 +1,177 @@
+*{
+    font-family: 'Mukta', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    list-style: none;
+    margin: 0;
+    /* background: lightgrey; */
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: deepskyblue;
+}
+
+.navigation a:hover {
+    background: whitesmoke; 
+
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(0,0,0,0.75);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  } */
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+.wrapper>* {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    height: 1rem;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 15px;
+}
+
+.main {
+    text-align: left;
+}
+
+.aside-1 {
+    padding: 0px;
+    background: skyblue;
+}
+
+.aside-2 {
+    background: white;
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .navigation {
+        justify-content: space-end;
+    }
+
+    .main {
+        flex: 2 0px;
+    }
+
+    .aside-1 {
+        order: 1;
+        flex: 0 30%;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+        flex: 0 20%;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
+
+.art-image {
+    background-image: url("/images/coding.jpeg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.art-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
+.info h4, .skill h4{
+    text-align: left;
+    background: deepskyblue;
+    margin: 0;
+}
+
+.info p, .skill p{
+    text-align: left;
+}
+
+.sidebar {
+    background-color: deepskyblue;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.skill div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skill div > * {
+    padding: 0.5rem;
+}
