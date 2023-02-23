@@ -175,3 +175,7 @@ body{
 .skill div > * {
     padding: 0.5rem;
 }
+
+#education ul{
+    list-style: none;
+}
