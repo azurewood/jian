@@ -4,7 +4,7 @@
 
 .navigation {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-end;
 
     list-style: none;
@@ -15,7 +15,7 @@
 .navigation a {
     text-decoration: none;
     display: block;
-    padding: 1em;
+    padding: 0.5rem;
     color: deepskyblue;
 }
 
